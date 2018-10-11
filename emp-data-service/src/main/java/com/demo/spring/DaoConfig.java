@@ -26,10 +26,13 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages="com.demo.spring")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages="com.demo.spring.repo")
+//That will be taken care by the spring boot
+
+
 public class DaoConfig {
 
-	@Autowired
-	DataSource ds;
+	/*@Autowired
+	DataSource ds;*/
 	
 	@Bean("ds")
 	public DriverManagerDataSource dataSource()
@@ -42,7 +45,7 @@ public class DaoConfig {
 		return ds;
 	}
 	
-	@Bean
+	/*@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory()
 	{
 		LocalContainerEntityManagerFactoryBean empfb=new LocalContainerEntityManagerFactoryBean();
@@ -65,7 +68,7 @@ public class DaoConfig {
 		JpaTransactionManager txm=new JpaTransactionManager();
 		txm.setEntityManagerFactory(empfb);
 		return txm;
-	}
+	}*/
 	 
 	
 }
