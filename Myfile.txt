@@ -36,3 +36,8 @@ http://localhost:8080/EmpService/emp/100
 ActiveMQ
 
 https://github.com/rangasaikrishna32/SpringBoot.git
+
+https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui/2.9.2
+
+Eureka
+http://localhost:8761/
